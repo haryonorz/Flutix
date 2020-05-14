@@ -64,7 +64,7 @@ class _SignInPageState extends State<SignInPage> {
                     TextField(
                       onChanged: (text) {
                         setState(() {
-                          isPasswordValid = text.length > 6;
+                          isPasswordValid = text.length >= 6;
                         });
                       },
                       controller: passwordController,
